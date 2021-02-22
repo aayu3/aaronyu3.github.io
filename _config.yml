@@ -80,12 +80,25 @@ footer:
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/aayu3/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
+  # _projects
+  - scope:
+        path: ""
+        type: projects
+    values:
+        layout: single
+        author_profile: false
+        share: true
   # _posts
   - scope:
       path: ""
